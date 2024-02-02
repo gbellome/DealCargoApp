@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <section>
+            <form>
+                <div id="Conexion">
+                    <div class="form-input">
+                        <label for="User">Usuario</label>
+                        <input id="User" type="text" name="User">
+                    </div>
+                    <div class="form-input">
+                        <label for="Password">Contraseña</label>
+                        <input type="text" id="Password" name="Password">
+                    </div>
+                    <div>
+                        <input type="submit" value="Probar conexión"
+                            id="ProbarConexion">
+                    </div>
+                </div>
+                <div id="ListaCompania">
+                    <div class="form-input">
+                        <label for="compania">Listado Compania</label>
+                        <select name="Company" id="compania">
+                            <option value="0" selected disabled>Ninguna compañia
+                                encontrada</option>
+                        </select>
+                    </div>
+                    <div>
+                        <input type="submit" value="Buscar Companias"
+                            id="BuscarCompanias">
+                    </div>
+                </div>
+                <!-- <div>
+                    <select name="Compania" id="compania">
+                        <option value="1">DealCargoSRL</option>
+                    </select>
+                    <label for="compania">Compania</label>
+                </div>
+                <div>
+                    <input type="text" id="Desde" name="Desde">
+                    <label for="Desde">Desde</label>
+                </div>
+                <div>
+                    <input type="text" id="Hasta" name="Hasta">
+                    <label for="Hasta">Hasta</label>
+                </div> -->
+            </form>
+        </section>
+        <section>
+            <textarea id="Message"></textarea>
+        </section>
+
+        <script src="../eel.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
